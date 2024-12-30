@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Card</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    /* Business Card Styles */
+    .business-card {
+      width: 750px;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Logo Section */
+    .logo-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      position: relative;
+      text-align: center;
+    }
+
+    .logo img {
+      width: 300px; /* Adjust size as needed */
+      height: auto;
+    }
+
+    .vertical-line {
+      position: absolute;
+      top: -60px;
+      bottom: 0;
+      right: -1px; /* Adjust spacing between logo and the line */
+      width: 2px;
+      height: 250%; /* Ensures it spans the full height of the container */
+      background-color: #662d91; /* Brinjal color */
+    }
+
+    /* Details Section */
+    .details {
+      flex: 2;
+      padding-left: 40px; /* Add space after the logo section */
+      color: #333;
+    }
+
+    .details h1 {
+      font-size: 26px;
+      color: #ff7a00; /* Orange color */
+      margin: 0;
+    }
+
+    .details h2 {
+      font-size: 14px;
+      font-weight: 400;
+      color: #555;
+      margin: 5px 0;
+    }
+
+    .divider {
+      border-top: 2px solid #00adef; /* Blue color */
+      margin: 10px 0;
+    }
+
+    /* Contact Information */
+    .contact-info div {
+      margin: 5px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-info span {
+      font-weight: bold;
+      color: #ff7a00;
+      margin-right: 5px;
+    }
+
+    .contact-info a {
+      color: #00adef;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="business-card">
+    <!-- Logo Section -->
+    <div class="logo-container">
+      <div class="logo">
+        <img src="logo.png" alt="Autizum Logo" />
+        <!-- Replace logo.png with your logo -->
+        <div class="vertical-line"></div>
+      </div>
+    </div>
+
+    <!-- Details Section -->
+    <div class="details">
+      <h1>Florina David Colar</h1>
+      <h2>
+        M.A., M.S., BCBA, LBA, NC, VA & TX<br />
+        Founder & Chief Clinical Officer<br />
+        UCLA Peers® Certified Provider
+      </h2>
+      <div class="divider"></div>
+      <div class="contact-info">
+        <div><span>O</span> (919)-910-4058</div>
+        <div><span>F</span> 919-910-0792</div>
+        <div><span>E</span> florina@autizum.com</div>
+        <div><span>A</span> 5448 Apex Peakway #300, Apex, NC 27502 USA</div>
+        <div>
+          <span>W</span>
+          <a href="http://www.autizum.com" target="_blank">www.autizum.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
